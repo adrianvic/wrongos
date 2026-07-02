@@ -1,0 +1,140 @@
+@font-face {
+  font-family: barcode;
+  src: url("/wrongos/static/fonts/BarcodeFont.ttf");
+}
+
+@font-face {
+  font-family: LEDLIGHT;
+  src: url("/wrongos/static/fonts/LEDLIGHT.otf");
+}
+
+:root {
+    --accent: #AE2448;
+    --accent-dark: #6E1A37;
+    --accent-secondary: #72BAA9;
+    --accent-tertiary: #D5E7B5;
+    --background: #362328;
+}
+
+body {
+    background-color: var(--background);
+    color: white;
+}
+
+h1 {
+    color: var(--accent-tertiary);
+}
+
+h2 {
+    margin-bottom: .2em;
+}
+
+a {
+    color: var(--accent-secondary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+input, button, textarea {
+    padding: .2rem;
+    background-color: #362328;
+    color: white;
+    border: medium solid var(--accent-secondary);
+    border-radius: 6px;
+}
+
+input, textarea {
+    border-color: var(--accent);
+}
+
+header {
+    background-image: url(/wrongos/static/images/grunge.png);
+    background-size: cover;
+    border: none;
+}
+
+header h1 {
+    font-family: barcode;
+    font-size: 10em;
+    font-weight: 100;
+    cursor: default;
+}
+
+header h1 span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.7rem;
+    transition: .1s;
+}
+
+header p {
+    font-family: LEDLIGHT;
+    font-size: 1.4em;
+    opacity: .5;
+}
+
+header h1:hover span {
+    color: var(--accent-secondary);
+}
+
+#headerTitle {
+    display: flex;
+    gap: 1em;
+}
+
+.ascii {
+    font-family: 'Roboto', sans-serif;
+    color: var(--accent-tertiary);
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+aside {
+    border-left: medium solid var(--accent-tertiary);
+    border-bottom: medium solid var(--accent-tertiary);
+    border-bottom-left-radius: 10px;
+    height: fit-content;
+}
+
+main {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    min-width: 0;
+}
+
+main p {
+    display: flow-root;
+}
+
+#widgetGenerator {
+    gap: .6em;
+    margin-bottom: .6em;
+}
+
+#widgetGenerator input {
+    width: 100%;
+}
+
+.indexLain {
+    float: left;
+    width: fit-content;
+    margin-right: 1.5em;
+    margin-bottom: 1em;
+}
+
+figure.quote {
+    max-width: 80%;
+    margin: auto;
+    text-align: end;
+}
+
+figure.quote figcaption {
+    font-weight: bold;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}

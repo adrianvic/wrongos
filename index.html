@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wrongos</title>
+	
+	<link rel="stylesheet" type="text/css" href="/wrongos/static/wrongo.css">
+	
+	<link rel="stylesheet" type="text/css" href="/wrongos/static/custom.css">
+	
+</head>
+
+<body>
+	<script>
+		let ringMembers = [];
+		
+			ringMembers.push({
+				link: "https://adrianvic.github.io",
+				description: "My personal website/blog where I post whatever&#39;s on my mind."
+			})
+		
+	</script>
+
+	<header>
+		<div id="headerTitle">
+			<h1>wr<span>o</span>ng<span>o</span>s</h1>
+			<p>For anyone that does not feel like fitting a mold.</p>
+		</div>
+		<div id="headerLinks">
+			 
+				<a href="/wrongos/index">home</a>
+			
+		</div>
+	</header>
+	
+	<div id="bodyHelper">
+		<main>
+			<pre class="ascii indexLain">
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⢤⣤⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣶⣧⣐⠍⢙⣀⣼⣿⣿⣅⡐⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠉⠙⠻⣿⣿⣿⣿⣿⣯⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠠⣶⠆⠀⢀⣺⡃⣀⠀⠀⠀⠈⢿⣿⣿⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⣸⣷⣼⠆⠀⡌⢹⣿⣿⠀⢄⠀⠀⠈⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⢀⣿⣿⣿⠀⠸⣷⣿⣿⣿⣆⣠⣿⡄⠀⣼⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⢸⣿⣿⣿⠂⠀⠹⡿⣿⣿⣿⣿⣿⠀⠀⠟⠈⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⣿⣿⣿⠏⢰⣿⣦⡀⠚⠛⢿⣿⡿⠀⠀⢸⠇⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢠⢿⣿⣿⠀⢾⣿⣿⡇⢻⡏⠀⠀⠀⠀⠀⡆⢰⣿⣿⡗⢠⣿⣿⣷⣦⣤⣤⣀⣤⣀⣀⠀⠀⠀⠀⠀⠀
+⠀⠀⠈⠙⠒⠿⠿⣿⣿⠸⠇⠀⠀⠀⠀⠀⣷⠘⣿⠟⣠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⢆⣠
+⠀⠀⠀⠀⠀⠀⠀⠀⢸⣧⠀⠀⠀⠀⠀⠀⣿⠀⣃⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠏⠘⠉
+⠀⠀⠀⠀⠀⠀⠀⠀⢸⣧⠀⠀⠀⠀⠀⠀⢄⣸⣿⣿⣿⣿⣭⣭⡉⠉⠉⠉⠈⠉⠀⠉⠉⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢸⠛⢸⡄⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢸⣶⢸⣷⠀⠀⠀⠀⠈⣇⣽⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠸⠛⠈⠉⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠁⢷⡆⠀⠀⠀⠀⠀⠀⠈⣄⣼⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠃⠀⠀⠀⠀⠀⠀⠀⢹⠛⢿⣿⠟⠁⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠚⠀⣴⡀⢰⡆⢀⣤⣄⣒⡉⠀⣶⣀⣎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⡟⠀⣼⡿⣷⢾⠇⢠⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣉⠛⠛⠁⢴⣽⣷⣧⣼⡄⠸⣽⡿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣿⣿⣿⣯⣿⣿⣿⣿⣿⣷⡶⣦⣴⡦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡯⢽⢿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣰⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⢾⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠐⠀⠀⠉⠙⠛⠻⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣏⣾⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠙⠛⠻⠿⢿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠈⢰⣶⠀⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠙⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠘⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠛⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+</pre>
+<h1>Howdy netizen</h1>
+<p>Be welcomed to the community of the authentic misfits. We are here for a more unique internet, advocating through handmade human experiences.</p>
+<p>There's no single mold, since trying to fit the new and unexplored into previous conceptions is indeed human behavior. Previous conceptions are shaped through experiences unique to a single human.</p>
+<p>Most of us are still fighting to fit everyone into generic, non-existent and artifical molds, painfully supressing uniqueness.</p>
+<p>In a world of labels, one may find joy in getting rid of them. But there's also only so much one can do to avoid the opposition before converting the efford into crystalizing a new mold to you put yourself into.</p>
+<p>If there's no unique mold, we embrace every mold. And we kindly ask you to do so.</p>
+<figure class="quote">
+<blockquote>
+The most beautiful things in the world cannot be seen or touched, they are felt with the heart.
+</blockquote>
+<figcaption>Antoine de Saint-Exupéry, The Little Prince</figcaption>
+</figure>
+<h2>Joining</h2>
+<p>Send a <strong>human-generated</strong> e-mail to <a href="mailto:adrianvictor+wrongos@disroot.org">adrianvictor+wrongos@disroot.org</a> with a link to your website and a description. If you're familiar with GitHub, you can also open a pull request adding yourself to <a href="https://github.com/adrianvic/wrongos/blob/main/pages/config/members.json"><code>members.json</code></a>.</p>
+<p>There is no requirement, applying is enough to say you agree with our philosphy.</p>
+<p>The only rule is to respect others.</p>
+
+		</main>
+		
+		<aside>
+			<h1>Members</h1>
+			
+			<dl>
+				 
+				<dt><a href="https://adrianvic.github.io">Adrian Victor</a></dt>
+				<dd>My personal website/blog where I post whatever&#39;s on my mind.</dd>
+				
+			</dl>
+			
+			<h1>Widget</h1>
+			<div id="webring-Wrongos-widget" class="_wrongoInternalWidget">
+    <style>
+        #webring-Wrongos-widget div {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            text-align: center;
+        }
+        
+        #webring-Wrongos-widget p {
+            margin: 0;
+            padding: 0.4em;
+            border: 2px solid #72BAA9;
+            color: #D5E7B5;
+        }
+        
+        #webring-Wrongos-widget a {
+            margin: 0;
+            padding: 0.2em;
+            border: 2px solid #72BAA9;
+            border-top: 0;
+            color: #72BAA9;
+        }
+        
+        #webring-Wrongos-widget a:first-child {
+            border-right: 0;
+        }
+        
+        #webring-Wrongos-widget a:last-child {
+            border-left: 0;
+        }
+    </style>
+    <p>This site is a member of the Wrongos webring.</p>
+    <div>
+        <a href="https://adrianvic.com/redirect?action=previous&current={address}">Previous Site</a>
+        <a href="https://adrianvic.com">About</a>
+        <a href="https://adrianvic.com/redirect?action=next&current={address}">Next Site</a>
+    </div>
+</div>
+
+			
+			<script src="/wrongos/static/widget-gen.js" defer></script>
+
+			<h2>Widget source</h2>
+			
+			<div id="widgetGenerator" style="display: flex;">
+				<input id="widgetGeneratorInput" type="text" placeholder="Your website address"></input>
+				<button id="widgetGeneratorButton">Generate</button>
+			</div>
+			<textarea id="widgetGeneratorSource" class="widgetSource" disabled>&lt;div id=&quot;webring-Wrongos-widget&quot; class=&quot;_wrongoInternalWidget&quot;&gt;
+    &lt;style&gt;
+        #webring-Wrongos-widget div {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            text-align: center;
+        }
+        
+        #webring-Wrongos-widget p {
+            margin: 0;
+            padding: 0.4em;
+            border: 2px solid #72BAA9;
+            color: #D5E7B5;
+        }
+        
+        #webring-Wrongos-widget a {
+            margin: 0;
+            padding: 0.2em;
+            border: 2px solid #72BAA9;
+            border-top: 0;
+            color: #72BAA9;
+        }
+        
+        #webring-Wrongos-widget a:first-child {
+            border-right: 0;
+        }
+        
+        #webring-Wrongos-widget a:last-child {
+            border-left: 0;
+        }
+    &lt;/style&gt;
+    &lt;p&gt;This site is a member of the Wrongos webring.&lt;/p&gt;
+    &lt;div&gt;
+        &lt;a href=&quot;https://adrianvic.com/redirect?action=previous&amp;current={address}&quot;&gt;Previous Site&lt;/a&gt;
+        &lt;a href=&quot;https://adrianvic.com&quot;&gt;About&lt;/a&gt;
+        &lt;a href=&quot;https://adrianvic.com/redirect?action=next&amp;current={address}&quot;&gt;Next Site&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</textarea>
+			
+		</aside>
+	</div>
+</body>
+</html>
