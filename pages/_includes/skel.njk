@@ -3,7 +3,7 @@
 <head>
 	<title>{{ preferences.ringName }}</title>
 	{% for sheet in preferences.stylesheets %}
-	<link rel="stylesheet" type="text/css" href="{{ '/static/' ~ sheet | url }}">
+	<link rel="stylesheet" type="text/css" href="{{ ('/static/' ~ sheet) | url }}">
 	{% endfor %}
 </head>
 
@@ -19,13 +19,13 @@
 	</script>
 
 	<header>
-		<div>
-			<h1>{{ preferences.ringName }}</h1>
+		<div id="headerTitle">
+			<h1>wr<span>o</span>ng<span>o</span>s</h1>
 			<p>{{ preferences.siteDescription }}</p>
 		</div>
 		<div id="headerLinks">
 			{% for name, link in preferences.links %} 
-				<a href="{{link}}">{{name}}</a>
+				<a href="{{ link | url }}">{{name}}</a>
 			{% endfor %}
 		</div>
 	</header>
@@ -44,18 +44,16 @@
 				<dd>{{ entry.description }}</dd>
 				{% endfor %}
 			</dl>
-
-			<hr>
 			
 			<h1>Widget</h1>
 			{% include 'widget.html' %}
 
+			{% if preferences.showWidgetSource == true %}
 			<script src="{{ '/static/widget-gen.js' | url}}" defer></script>
 
-			{% if preferences.showWidgetSource == true %}
-			<p>Widget source</p>
+			<h2>Widget source</h2>
 			{% set widget %}{% include "widget.html" %}{% endset %}
-			<div style="display: flex;">
+			<div id="widgetGenerator" style="display: flex;">
 				<input id="widgetGeneratorInput" type="text" placeholder="Your website address"></input>
 				<button id="widgetGeneratorButton">Generate</button>
 			</div>

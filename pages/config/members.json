@@ -1,12 +1,7 @@
 [
 	{
-		"name": "example[dot]com",
-		"link": "https://example.com", 
-		"description": "An example website."
-	},
-	{
-		"name": "example[dot]org",
-		"link": "https://example.org", 
-		"description": "Another example website."
+		"name": "Adrian Victor",
+		"link": "https://adrianvic.github.io", 
+		"description": "My personal website/blog where I post whatever's on my mind."
 	}
 ]

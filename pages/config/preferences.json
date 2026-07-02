@@ -1,12 +1,13 @@
 {
-	"ringName": "Wrongo",
-	"ringAddress": "https://example.com",
-	"siteDescription": "The webring for all users of Wrongo",
+	"ringName": "Wrongos",
+	"ringAddress": "https://adrianvic.com",
+	"siteDescription": "For anyone that does not feel like fitting a mold.",
 	"showWidgetSource": true,
 	"links": {
 		"home": "/index"
 	},
 	"stylesheets": [
-		"wrongo.css"
+		"wrongo.css",
+		"custom.css"
 	]
 }
