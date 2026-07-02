@@ -5,7 +5,7 @@ There's no single mold, since trying to fit the new and unexplored into previous
 
 Most of us are still fighting to fit everyone into generic, non-existent and artifical molds, painfully supressing uniqueness.
 
-In a world of labels, one may find joy in getting rid of them. But there's also only so much one can do to avoid the opposition before converting the efford into crystalizing a new mold to you put yourself into.
+In a world of labels, one may find joy in getting rid of them. But there's also only so much one can do to avoid the opposition before converting the efford into crystalizing a new mold for you to fit into.
 
 If there's no unique mold, we embrace every mold. And we kindly ask you to do so.
 
