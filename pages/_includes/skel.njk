@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ preferences.ringName }}</title>
+	{% for sheet in preferences.stylesheets %}
+	<link rel="stylesheet" type="text/css" href="{{ '/static/' ~ sheet | url }}">
+	{% endfor %}
+</head>
+
+<body>
+	<script>
+		let ringMembers = [];
+		{% for entry in members %}
+			ringMembers.push({
+				link: "{{entry.link}}",
+				description: "{{entry.description}}"
+			})
+		{% endfor %}
+	</script>
+
+	<header>
+		<div>
+			<h1>{{ preferences.ringName }}</h1>
+			<p>{{ preferences.siteDescription }}</p>
+		</div>
+		<div id="headerLinks">
+			{% for name, link in preferences.links %} 
+				<a href="{{link}}">{{name}}</a>
+			{% endfor %}
+		</div>
+	</header>
+	
+	<div id="bodyHelper">
+		<main>
+			{{ content | safe }}
+		</main>
+		
+		<aside>
+			<h1>Members</h1>
+			
+			<dl>
+				{% for entry in members %} 
+				<dt><a href="{{entry.link}}">{{entry.name}}</a></dt>
+				<dd>{{ entry.description }}</dd>
+				{% endfor %}
+			</dl>
+
+			<hr>
+			
+			<h1>Widget</h1>
+			{% include 'widget.html' %}
+
+			<script src="{{ '/static/widget-gen.js' | url}}" defer></script>
+
+			{% if preferences.showWidgetSource == true %}
+			<p>Widget source</p>
+			{% set widget %}{% include "widget.html" %}{% endset %}
+			<div style="display: flex;">
+				<input id="widgetGeneratorInput" type="text" placeholder="Your website address"></input>
+				<button id="widgetGeneratorButton">Generate</button>
+			</div>
+			<textarea id="widgetGeneratorSource" class="widgetSource" disabled>{{ widget | escape }}</textarea>
+			{% endif %}
+		</aside>
+	</div>
+</body>
+</html>

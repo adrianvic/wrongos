@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    border-bottom: thick groove black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#headerLinks {
+    margin: auto 0 0 auto;
+}
+
+header, main, aside {
+    padding: 1em;
+}
+
+header p, header h1 {
+    margin: 0;
+}
+
+#bodyHelper {
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+h1 {
+    margin-bottom: .2em;
+}
+
+p, dl, hr {
+    margin-bottom: 1em;
+}
+
+dd {
+    margin-inline-start: 1em;
+}
+
+.widgetSource {
+    width: 100%;
+    color: black;
+    height: 15em;
+    resize: none;
+}
+
+._wrongoInternalWidget {
+    margin-bottom: 1em;
+}

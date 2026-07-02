@@ -1,0 +1,12 @@
+{
+	"ringName": "Wrongo",
+	"ringAddress": "https://example.com",
+	"siteDescription": "The webring for all users of Wrongo",
+	"showWidgetSource": true,
+	"links": {
+		"home": "/index"
+	},
+	"stylesheets": [
+		"wrongo.css"
+	]
+}

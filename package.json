@@ -1,0 +1,12 @@
+{
+  "name": "wrongo",
+  "version": "1.0.0",
+  "description": "Webring made easy",
+  "license": "MIT",
+  "author": "Adrian Victor <adrianvictor@disroot.org>",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
