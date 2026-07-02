@@ -27,7 +27,7 @@ jobs:
 
       - name: Install dependencies & build
         run: |
-          npm run build -- --pathprefix=wrongos
+          npx @11ty/eleventy --pathprefix=wrongos
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
