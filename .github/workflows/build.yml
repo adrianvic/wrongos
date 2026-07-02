@@ -27,7 +27,6 @@ jobs:
 
       - name: Install dependencies & build
         run: |
-          npm ci
           npm run build -- --pathprefix=wrongos
 
       - name: Deploy
