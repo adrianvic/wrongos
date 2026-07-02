@@ -1,65 +1,25 @@
-# Wrongo
-Wrongo is a 11ty template aiming to make webring hosting easy. The only thing you need to configure is the `preferences.json` file, then you add members to `members.json` and _voilà_, you have a custom webring!
+# Wrongos
+Be welcomed to the community of the authentic misfits. We are here for a more unique internet, advocating through handmade human experiences.
 
-The generated output will be a static website, meaning it does not need a dedicated server to host once you build it. Each time there's a change you build it again and you get pure HTML files alongside their resources. This makes possible hosting Wrongo on places like [Neocities](https://neocities.org/), [GitHub Pages](https://docs.github.com/en/pages), [InfinityFree](https://www.infinityfree.com/), or really any other webserver possible.
+There's no single mold, since trying to fit the new and unexplored into previous conceptions is indeed human behavior. Previous conceptions are shaped through experiences unique to a single human.
 
-"What is a webring", you may ask. Webrings are groups of websites chained together by a common widget. Webrings were more common before search engines and now are usually present in indie websites, since they allow the user to find related human-made content.
+Most of us are still fighting to fit everyone into generic, non-existent and artifical molds, painfully supressing uniqueness.
 
-<p align="center">
-<img width="290" height="133" alt="image" src="https://github.com/user-attachments/assets/4c0b6748-8fc9-49d9-9bbd-14207a331ca0" />
-</p>
+In a world of labels, one may find joy in getting rid of them. But there's also only so much one can do to avoid the opposition before converting the efford into crystalizing a new mold to you put yourself into.
 
-## I've cloned the repo, what now?
-Start by customizing `preferences.json` to give your webring a name, then add your first members to `members.json`. Finally, edit the index page source at `index.md`, you can rename this file to end with `html` if you don't want to use markdown.
+If there's no unique mold, we embrace every mold. And we kindly ask you to do so.
 
-> [!WARNING]  
-> Make sure to set `ringAddress` to your server address, otherwise the widget will be broken.
+<figure>
+<blockquote>
+The most beautiful things in the world cannot be seen or touched, they are felt with the heart.
+</blockquote>
+<figcaption>Antoine de Saint-Exupéry, The Little Prince</figcaption>
+</figure>
 
-## The default widget
-Wrongo comes with a default widget template at `_includes/widget.html`, most people don't need nor would want to change it. It works out of the box if you've set `ringAddress` in your config. You can skip this section if you're not interested in knowing how it works.
+## Joining
 
-### How it works?
-The widget itself is a Nunjunks template that pulls `ringAddress` from your preferences file to build an address like this:
+Send a **human-generated** e-mail to [adrianvictor+wrongos@disroot.org](mailto:adrianvictor+wrongos@disroot.org) with a link to your website and a description. If you're familiar with GitHub, you can also open a pull request adding yourself to [`members.json`](https://github.com/adrianvic/wrongos/blob/main/pages/config/members.json).
 
-```njk
-{{ringAddress}}/redirect?action=previous&current={{address}}
-```
+There is no requirement, applying is enough to say you agree with our philosphy.
 
-> [!NOTE]  
-> `action=previous` can also be `action=next`.
-
-`{{address}}` will not be replaced right now, for that we have the widget source generator, since each website that has the widget must inform it's own address in the URL parameter.
-
-If everything is correct, the link should lead to a page in your Wrongo instance that will redirect to the next or previous member of that webring.
-
-## Custom widgets
-The `members.json` file is copied to the generated website's root, and you can do whatever you want using that.
-
-To make a widget from this you need to pull that file using JS and parse it. You can take a look at Wrongo's `redirect.js` for part of the code.
-
-## I want more pages
-Just add a new file (`md`, `html`) to the `/pages` directory, you may also want to drop that link on the `links` section of `preferences.json`.
-
-## I want more styling
-Add your custom CSS to `/static` at the project root, then change your `preferences.json` stylesheets section so Wrongo knows where to look for CSS. Example:
-
-```json
-"stylesheets": [
-	"wrongo.css",
-    "custom.css",
-    "works/with/subdirectories.css"
-]
-```
-
-## I want more files
-Everything you drop on `/static` will be copied to `/static` in the generated website.
-
-## Frequent Questions
-### The widget is not working
-Please read again the section of this page about the widget, if you're still unsure why it is not working, please open an issue.
-
-### Markdown doesn't have feature X
-Markdown pages can have HTML mixed with markdown, just make sure to leave a newline before and after the HTML tags.
-
-### I want to disable widget source on the sidebar
-You can disable the widget source generator by setting `showWidgetSource` to false inside `preferences.json`.
+The only rule is to respect others.
